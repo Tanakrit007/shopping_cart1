@@ -1,0 +1,26 @@
+{
+  "cartItems": [
+    {
+      "id": 1,
+      "title": "Laptop",
+      "quantity": 1,
+      "price": 1200,
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+    },
+    {
+      "id": 3,
+      "title": "Wireless Headphones",
+      "quantity": 2,
+      "price": 200,
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1603570626265-cbbc659d5ac0.webp"
+    },
+    {
+      "id": 8,
+      "title": "Gaming Mouse",
+      "quantity": 1,
+      "price": 60,
+      "imageUrl": "https://img.daisyui.com/images/stock/photo-1586993465405-d58ed981b4fe.webp"
+    }
+  ],
+  "totalAmount": 1660
+}
