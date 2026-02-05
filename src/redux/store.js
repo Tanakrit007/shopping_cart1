@@ -1,41 +1,44 @@
 import { configureStore } from "@reduxjs/toolkit";
 import pageReducer from "./pages/pageReducer";
 import productReducer from "./products/productReducer";
+import cartReducer from "./carts/cartReducer";
 
-// Load persisted products from localStorage (if any)
-const loadPersistedProducts = () => {
+// ฟังก์ชันโหลดข้อมูลที่บันทึกไว้
+const loadState = () => {
   try {
-    const raw = localStorage.getItem("products");
-    if (!raw) return undefined;
-    return { products: JSON.parse(raw) };
+    const serializedProducts = localStorage.getItem("products");
+    const serializedCart = localStorage.getItem("cart");
+    // ไม่ต้องโหลดสถานะหน้าเพจจาก localStorage เพื่อให้เปิดแอปมาเจอหน้า Home เสมอ
+
+    return {
+      products: serializedProducts ? JSON.parse(serializedProducts) : undefined,
+      cart: serializedCart ? JSON.parse(serializedCart) : undefined,
+    };
   } catch (e) {
     return undefined;
   }
 };
 
-const preloadedState = loadPersistedProducts();
+const persistedState = loadState();
 
 const store = configureStore({
   reducer: {
     pages: pageReducer,
     products: productReducer,
+    cart: cartReducer,
   },
-  preloadedState,
+  preloadedState: {
+    products: persistedState.products,
+    cart: persistedState.cart,
+    // สถานะหน้าเพจจะใช้ค่าเริ่มต้นจาก pageReducer ({ home: true })
+  },
   devTools: true,
 });
 
-// Subscribe to store changes and persist products to localStorage
-let currentProducts = store.getState().products;
+// บันทึกสต็อกสินค้าและตะกร้าสินค้าเมื่อมีการเปลี่ยนแปลง
 store.subscribe(() => {
-  const newProducts = store.getState().products;
-  if (newProducts !== currentProducts) {
-    currentProducts = newProducts;
-    try {
-      localStorage.setItem("products", JSON.stringify(newProducts));
-    } catch (e) {
-      // ignore storage errors
-    }
-  }
+  localStorage.setItem("products", JSON.stringify(store.getState().products));
+  localStorage.setItem("cart", JSON.stringify(store.getState().cart));
 });
 
 export default store;

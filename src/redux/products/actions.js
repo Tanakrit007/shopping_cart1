@@ -1,22 +1,16 @@
 import { ADD_PRODUCT, ADD_QUANTITY, REMOVE_QUANTITY } from "./actionTypes";
 
-export const addProduct = (product) => {
-  return {
-    type: ADD_PRODUCT,
-    payload: product,
-  };
-};
+export const addProduct = (product) => ({
+  type: ADD_PRODUCT,
+  payload: product,
+});
 
-export const addquantity = (productId, quantity) => {
-  return {
-    type: ADD_QUANTITY,
-    payload: { productId, quantity },
-  };
-};
+export const addProductQuantity = (productId) => ({
+  type: ADD_QUANTITY,
+  payload: { productId, quantity: 1 },
+});
 
-export const removequantity = (productId) => {
-  return {
-    type: REMOVE_QUANTITY,
-    payload: { productId },
-  };
-};
+export const removeProductQuantity = (productId) => ({
+  type: REMOVE_QUANTITY,
+  payload: { productId },
+});

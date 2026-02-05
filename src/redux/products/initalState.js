@@ -3,7 +3,7 @@ export const initalState = [
     id: 1,
     title: "Laptop",
     category: "Electronics",
-    available: 10,
+    quantity: 10,
     price: 1200,
     imageUrl:
       "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
@@ -12,81 +12,81 @@ export const initalState = [
     id: 2,
     title: "Smartphone",
     category: "Electronics",
-    available: 15,
+    quantity: 15,
     price: 800,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1614741596673-5f3f1a54a1e4.webp",
+      "https://mediam.dotlife.store/media/catalog/product/cache/3b7e899159f673788675d87d1d929a98/i/p/iphone_16_plus_ultramarine_pdp_image_position_1a_ultramarine_color__th-th.jpg?auto=webp&format=pjpg&width=840&height=375&fit=cover",
   },
   {
     id: 3,
     title: "Wireless Headphones",
     category: "Electronics",
-    available: 20,
+    quantity: 20,
     price: 200,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1603570626265-cbbc659d5ac0.webp",
+      "https://sony.scene7.com/is/image/sonyglobalsolutions/WH-CH520_Product_intro_Pink_01_M?$productIntroPlatemobile$&fmt=png-alpha",
   },
   {
     id: 4,
     title: "Smartwatch",
     category: "Electronics",
-    available: 30,
+    quantity: 30,
     price: 150,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1606890701075-d6c8e8f54857.webp",
+      "https://i5.walmartimages.com/seo/Smart-Watch-Android-Phones-iOS-Compatible-iPhone-Samsung-IP68-Swimming-Waterproof-Smartwatch-Fitness-Tracker-Heart-Rate-Monitor-Watches-Men-Women_a1abc4af-b34f-437a-90ac-8e4a23a0ed80.e9c975d31af1c7ba3b2720860d15400c.jpeg",
   },
   {
     id: 5,
     title: "Tablet",
     category: "Electronics",
-    available: 8,
+    quantity: 8,
     price: 400,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1602831067304-e3e3e99f22b0.webp",
+      "https://p2-ofp.static.pub/fes/cms/2021/10/28/juqs65pgl1gh3dysi7yv1tnvtsiqva364946.png",
   },
   {
     id: 6,
     title: "Bluetooth Speaker",
     category: "Electronics",
-    available: 12,
+    quantity: 12,
     price: 50,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1592194996308-7b43878e84d3.webp",
+      "https://m.media-amazon.com/images/I/718yxonHN8L._AC_UF894,1000_QL80_.jpg",
   },
   {
     id: 7,
     title: "Laptop Bag",
     category: "Accessories",
-    available: 25,
+    quantity: 25,
     price: 30,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1604514291650-7c7e87216b78.webp",
+      "https://www.hilmynabrand.com/wp-content/uploads/2022/08/Twelve-Laptop-Bag-06.jpg",
   },
   {
     id: 8,
     title: "Gaming Mouse",
     category: "Accessories",
-    available: 40,
+    quantity: 40,
     price: 60,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1586993465405-d58ed981b4fe.webp",
+      "https://www.aquapro.co.th/wp-content/uploads/2023/09/Onikuma-Gaming-Mouse-Mizu-Wireless-4-square_medium-2-1.jpg",
   },
   {
     id: 9,
     title: "Keyboard",
     category: "Accessories",
-    available: 50,
+    quantity: 50,
     price: 100,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1591078480851-b0348a1e32a5.webp",
+      "https://m.media-amazon.com/images/I/71+p3Hx03dL._AC_SL1000__.jpg",
   },
   {
     id: 10,
     title: "External Hard Drive",
     category: "Storage",
-    available: 35,
+    quantity: 35,
     price: 150,
     imageUrl:
-      "https://img.daisyui.com/images/stock/photo-1582544739804-d970b98e7c7b.webp",
+      "https://cdn.thewirecutter.com/wp-content/media/2023/05/externalhardrives-2048px-09422.jpg",
   },
 ];
